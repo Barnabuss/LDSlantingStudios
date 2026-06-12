@@ -1,0 +1,42 @@
+# vault configurations
+[meta]
+    # friendly name
+    title =                 "Little Garden Map"
+    # contributors
+    author =                "Go Horse Studios"
+    # version
+    version =               "1.0.0"
+
+# map configurations
+[map]
+    # auto destroy all entities spawned by this package when it unloads
+    auto_cleanup =          true
+    # whether to load all level entities on client - only enable it if your package needs to use level static meshes entities
+    load_level_entities =   false
+    # the game version (major.minor) at the time this package was created, for granting compatibility between breaking changes
+    compatibility_version = "1.93"
+    # packages requirements
+    packages_requirements = [
+
+    ]
+    # asset packs requirements
+    assets_requirements = [
+                            "little-garden",
+    ]
+    # compatible game modes
+    compatible_game_modes = [
+
+    ]
+    # map asset
+    map_asset =             "little-garden::Lvl_LittleGarden"
+    # list of spawn points
+    spawn_points = [
+                            { location = "Vector(0.00, 0.00, 1000.00)", rotation = "Rotator(0.00, 0.00, 0.00)" }
+    ]
+    # whether to enable water buoyancy components on Actors if you map uses Water Plugin - disable it for additional performance on maps that don't need it
+    enable_water_buoyancy = false
+
+# map custom data
+# those data can be accessed through Server.GetMapConfig() method from any package
+[custom_data]
+    # something = 123
